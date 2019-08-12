@@ -1,6 +1,12 @@
 <?php
 
-class Solution
+/**
+ * Class T57Solution
+ *
+ * 给出一个无重叠的 ，按照区间起始端点排序的区间列表。
+ * 在列表中插入一个新的区间，你需要确保列表中的区间仍然有序且不重叠（如果有必要的话，可以合并区间）。
+ */
+class T57Solution
 {
     /**
      * @param Integer[][] $intervals
@@ -33,5 +39,5 @@ class Solution
 $intervals = [[2,6],[7,9]];
 $newInterval = [15, 18];
 
-$outIntervals = Solution::insert($intervals, $newInterval);
+$outIntervals = T57Solution::insert($intervals, $newInterval);
 print_r($outIntervals);
